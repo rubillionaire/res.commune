@@ -1,0 +1,11 @@
+{
+  "name": "res.commune",
+  "description": "Design your own Creative Commons books to print.",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "latex": "0.0.1",
+    "express": "3.x",
+    "morgan": "~1.0.0"
+  }
+}
