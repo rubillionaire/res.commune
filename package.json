@@ -6,6 +6,7 @@
   "dependencies": {
     "latex": "0.0.1",
     "express": "3.x",
-    "morgan": "~1.0.0"
+    "morgan": "~1.0.0",
+	"nodemon": "1.0.15"
   }
 }
