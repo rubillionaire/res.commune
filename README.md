@@ -1,6 +1,6 @@
 # Res Commune
 
-Simple application that take Creative Commons texts and turn them into a PDF.
+Simple application to select a Creative Commons text, and design your own book.
 
 *A work in progress.*
 
