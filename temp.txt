@@ -1,0 +1,42 @@
+Straw Men.
+
+	In my first semester as a RISD student, my class was asked to construct a matrix of words and images around a given political issue. On one axis were the three Aristotelian forms of persuasion (ethos, logos and pathos), on the other were C. S. Perse’s set of semiological signs (symbol, icon and index). In the process of arranging images along this rubric, we were literally producing knowledge, creating persuasive visual arguments using the smallest toolset possible. Over the last 20 years, American graphic design educators (and perhaps the rest of the world as well) have sought to redefine design methodologies as modes of study, drawing connections between our field and those of the arts and humanities. But the locus of our field always strikes me as being so limited. What do we study? The iconographies of our mass culture? The very toolsets we use for production? Our screens? I get the sense that designers imagine themselves as transformers of culture, creating utopic and speculative experiences intended to reorganize the daily practices of people. Underneath this nascent form of investigation I often sense a neoliberal stream of thought and practice that has yet to be investigated. I like to imagine my own work as small attempts to buck the trends I see in the field, in hopes of building enough walls and alienating enough of the right people to ensure I’m never again lured into design labor that stands against my own values.
+
+On Disciplinarity: reader, audience, end-user, dataset
+	From the boundaries of scholarship to the daily practices of control, the rhetoric of design as a ‘discipline’ can take on unintended and even sinister meanings. Launched in 2011 by the celebrated Industrial Designer, Yves Behar, the Jawbone UP is a bracelet that facilitates data collection on its wearer’s sleep, food intake, and daily movements. Its stated intent: to create a data feedback loop to help its wearer alter her daily habits in hopes of making healthier choices. This seems to be the dominant trend in mobile and wearable technology. There are limitless applications and physical sensors for users to re-imagine their daily practices, from diet apps and sleep timers to mapping applications which are making the concept of ‘lost’ seem increasingly symbolic and physically difficult to achieve. 
+	In his seminal work, Discipline and Punish, French theorist Michel Foucault introduces the concept of panopticism as [reconfigure] “a field of visibility, and who knows it, assumes responsibility for the constraints of power; he makes them play spontaneously upon himself; he inscribes in himself the power relation in which he simultaneously plays both roles; he becomes the principle of his own subjection” (Foucault 203). The tools many designers are creating and the cultures we are celebrating are increasing folding into self-disciplinary mechanisms, or what Foucault calls “technologies of the self,” modes of policing the self within a specific subset of accepted behavioral practices. 
+	The Fluxus movement of the mid-20th century stands as a continual source of inspiration for contemporary graphic designers, especially those seeking to engage with the ubiquitous imagined community of ‘the crowd.’ Artists working in this tradition created manuals and games for their users. Through a strange twist of art into capital, today those practices are evident in the rule-based constructions that designers create to address what former RISD president and venture-capitalist Jon Maeda refers to in a recent Wall Street Journal article as “both rational and irrational needs that we all have” (Maeda WSJ 02/21). He continues, “The rational part can be engineered and prepared to perfection; the irrational part needs to be engineered with the same kind of precision, but must also be timely and relevant to how the consumer feels.” 
+
+On Proprietarity 
+	This past year, design student Matt Duhamel stumbled across an incredibly sensual visual algorithm by misusing the Content-Aware Fill that comes with Adobe Photoshop. Content Aware Typography constitutes a simple set of directives:
+
+1. Choose a picture with some typography in it;
+2. Select an area that is close to the letters;
+3. Apply Photoshop’s Content-Aware Fill;
+4. Submit.
+Duhamel defines this process as “Algorithms, human psychology, consumerism, gestalt, art standards, and memes all rolled into one giant bundle” (@dualhammers 19 Jul 2013). For me, this project is less about automation and algorithm and more an act of faith in the mechanisms of authorship controlled by a shrinking subset of private interests, the Adobe Corporation and their increased control of the visual parameters within which designers, filmmakers, and digital artists now work.i have leftover Greek food, come eat it
+With the release of Facebook’s Origami platform for screen interaction, the walls around ‘user experience’ are becoming buttressed, turning the work of designers in that particular field into managers of a subset of gestures and interactions, most of which are constructed in corporate campuses in California. What can be said of human experience when it becomes predominantly digitized and those interactions are created under strict control?
+
+On Entrepreneurship
+	Another uninterrogated concept that has begun to echo throughout our discipline is that of entrepreneurship. From Richard Florida to Stephen Heller, I get a sense that we now attribute some innate value to the myth of the creative capitalist. The naive concept of ‘design for good’ has seemed to wither but I worry that no outward concern has arisen in its place. Instead graphic designers are returning to the intrinsic value of capital without critique. In his article, Designer as Entrepreneur, Stephen Heller writes:
+“Design authorship was wishful design thinking--a dream that designers could ultimately command their own creative destinies while contributing something of value to the culture. Design entrepreneurship, on the other hand is a more demonstrative business construct, moving beyond traditional self-service design into self-starting and self-sustaining design endeavors” (Heller 33) 
+
+In my own experience as a Teaching Assistant, I often heard students complaining that they had not received sufficient business training during the their time at RISD. Perhaps it is a shortcoming of the field--and a clear demonstration that the field remains distant from its dreams of being a recognized method of inquiry--that the working environment for graphic designers is as intimately linked with capital as that of a business school program. Design work is a hustle, no doubt, but is there really no alternative future for graphic designers other than that of either entrepreneur or employee to an entrepreneur? 
+
+
+Distribution & Access
+Is there a way out? Most likely not. However, I like to imagine my own work as little moves in opposition to the axioms of capital and power that seem to thread their way through much of contemporary American graphic design practices. One possible future is one of unrestricted--or at least increased--access. The Res Commune press is an attempt to parse the almost limitless storehouse of public domain texts and rendering them in a more accessible form. Through a mixture of digital technology and minor reader contribution, the press allows its users to pull the raw materials of texts available on archive.org and render them in either a printed book or epublication. 
+
+Misuse
+	The People’s Riso is an attempt to replicate the fetishized printing technology of the risograph printer in the form of an altered, low-end consumer laser printer. For the cost of $150, one tenth that of a new risograph, and a little bit of elbow grease, anyone can create a simple spot color printer.
+	democracy through misuse?
+	-upend the act of mastery
+Why are those concepts important?
+
+non-application
+	non-directive model for applications. make that explicit.
+
+
+...
+
+

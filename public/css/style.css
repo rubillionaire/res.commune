@@ -1,0 +1,25 @@
+body {
+	margin:0;
+	font-family: georgia;
+	
+}
+
+.fullScreen {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	padding:50px;
+	border-bottom:10px solid #000;
+}
+
+#fullText {
+	font-size:1.5em;
+	width:80%;
+	height:600px;
+}
+
+.field {
+	outline:none;
+	padding:10px;
+	font-size:2em;
+	font-family: georgia;
+}

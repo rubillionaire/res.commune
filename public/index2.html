@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel='stylesheet' type='text/css' href='css/style.css' >
+        <meta http-equiv='content-type' content='text/html; charset=utf-8' />
+        <meta name='viewport' content='initial-scale=1.0 maximum-scale=1.0'>
+    </head>
+    <body>
+		<div class="fullScreen">
+
+		<!-- NEW SCRIPT -->
+		<div>
+            <input type="text" id="name" placeholder="name">
+            <input type="text" id="text" placeholder="text">
+            <button id="createPDF">createPDF</button>
+		    <button id="test">test</button>
+		<br /><br /><br /><br /><br />
+		<textarea id="allText"></textarea>
+        
+		</div>
+        <div>
+            <a id="download">Download link</a>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/fetch-text.js"></script>
+        <script src="js/scrollTo.js"></script>        
+        <script>
+		
+		$("#test").on('click',function(event) {
+	var bookURL = "https://archive.org/stream/yellowwallpaper00gilmgoog/yellowwallpaper00gilmgoog_djvu.txt";
+
+/*
+		
+
+			 $.post('/test', function(response) {
+	                console.log('response');
+	                console.log(response);
+//	                $('#download').attr('href', response.link);
+	            });
+*/
+	
+
+				$.ajax({
+				     type : "POST",
+				     dataType : "HTML",
+				     url : bookURL,
+					crossDomain: true,
+				     success: function(data){
+						data = data.toString();
+						
+						
+						console.log();
+				     }
+				});
+	
+	
+		});
+
+        $('#createPDF').on('click', function(event) {
+            var request = {
+                name: $('#name').val(),
+                text: $('#text').val()
+            };
+            $.post('/createPDF', request, function(response) {
+                console.log('response');
+                console.log(response);
+                $('#download').attr('href', response.link);
+            });
+        });
+        </script>
+    </body>
+</html>

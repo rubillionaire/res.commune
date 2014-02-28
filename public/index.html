@@ -2,34 +2,125 @@
 <html>
     <head>
         <title></title>
-        <link rel='stylesheet' type='text/css' href='' />
+        <link rel='stylesheet' type='text/css' href='css/style.css' >
         <meta http-equiv='content-type' content='text/html; charset=utf-8' />
         <meta name='viewport' content='initial-scale=1.0 maximum-scale=1.0'>
     </head>
     <body>
-        <div>
+		<div class="fullScreen">
+			<div class="entryForm">
+				<input type="text" name="textInput" id="textInput" class="field" placeholder="Enter Book Title"></input> 
+				<span class="submission" style="cursor:pointer">submit</span>
+			</div>
+		</div>
+		
+		<div class="fullScreen" id="selections">
+			<div class="possibleSelections">
+			</div>
+		</div>
+        
+		<div class="lastInfo">
+			<form action="/collect/node/add/bookcover" method="post">
+
+			<div id="hiddenVal" style="visibility:hidden"></div>
+			<label>your name</label><input type="text" name="your_name" class="field" id="your_name" placeholder="your name"></input><br />
+
+			<label>title</label><input type="text" name="bookTitle" id="bookTitle" class="field"></input><br />
+			<label>author</label><input type="text" name="bookAuthor" id="bookAuthor" class="field"></input><br />
+
+			<label>full text</label><br />
+			<textarea name="fullText" id="fullText" class="field"></textarea><br />
+			<input type="submit" class="sendToForm" value="submitText">
+			</form>
+		</div>
+
+		<!-- NEW SCRIPT -->
+		<div>
             <input type="text" id="name" placeholder="name">
             <input type="text" id="text" placeholder="text">
-            <button>send</button>
+            <button id="createPDF">send</button>
+            <button id="test">send</button>
         </div>
         <div>
             <a id="download">Download link</a>
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        
-        <script>
-        $('button').on('click', function(event) {
-            var request = {
-                name: $('#name').val(),
-                text: $('#text').val()
-            };
-            $.post('/', request, function(response) {
-                console.log('response');
-                console.log(response);
-                $('#download').attr('href', response.link);
-            });
-        });
-        </script>
+        <script src="js/fetch-text.js"></script>        
+        <script src="js/scrollTo.js"></script>        
+		 <script>
+
+			$("#test").on('click',function(event) {
+
+	            var request = {
+	                name: $('#name').val(),
+	                text: $('#text').val()
+	            };
+
+			    $.post('/test', request, function(response) {
+	                console.log('response');
+	                console.log(response);
+	                $('#download').attr('href', response.link);
+	            });
+			});
+
+	        $('#createPDF').on('click', function(event) {
+	            var request = {
+	                name: $('#name').val(),
+	                text: $('#text').val()
+	            };
+	            $.post('/createPDF', request, function(response) {
+	                console.log('response');
+	                console.log(response);
+	                $('#download').attr('href', response.link);
+	            });
+	        });
+	
+	
+			$("body").on('click', ".textOption", function(){
+				$.scrollTo(".lastInfo",500);
+				var identifier = $(this).attr("data-identifier");
+				detailsURL = "http://archive.org/details/" + identifier + "&output=json";
+				$.ajax({
+					url: detailsURL,
+					dataType: 'jsonp',
+					success: function(details_data) {
+
+						var metadata;
+						 for (obj in details_data.files) {
+							console.log(obj);
+						 	if ((obj.slice(-3) == "txt") && (obj.slice(-8) != "meta.txt")) {
+
+						 		download_url = "http://archive.org/stream/" + identifier + obj;
+
+
+								$.ajax({
+								url:"/getBook",
+								type:"POST",
+								dataType: "html",
+							  data: { download_url: download_url },
+								success: function(fullText) {
+									$("#fullText").val("");
+
+									$("#bookTitle").val(details_data.metadata.title);
+									$("#bookAuthor").val(details_data.metadata.creator);
+
+									var entirety = $("#fullText").val();
+
+									$("#fullText").val(entirety + fullText);
+								} 
+
+								});
+
+						 	}
+						 }
+					}
+
+				});
+
+
+			});
+	
+	        </script>
     </body>
 </html>
